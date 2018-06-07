@@ -2,5 +2,7 @@ BQK-novel-spider、MMjpg-spider、QSBK-spider、JS-spider、TXSZ-spider、NHDZ-spider
 
 Lagou-Spider 目前爬取详情页时有一点问题
 
+Weather-Spider 爬取中国天气网，并将温度最高的10座城市数据可视化
+
 user_agent.py 中存放的是一些请求头中User-Agent
 

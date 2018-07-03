@@ -115,7 +115,7 @@ class SpiderMain(object):
         self.parser = HtmlParser()
         self.outputer = HtmlOutputer()
 
-    def craw(self):
+    def crawl(self):
         referer = self.server_url
         html_content = self.downloader.download(self.target_url, referer)
         self.names, self.urls = self.parser.get_urls(html_content)
@@ -153,7 +153,7 @@ def main():
     server_url = 'http://www.mmjpg.com'
 
     spider = SpiderMain(server_url, target_url, page)
-    spider.craw()
+    spider.crawl()
 
 
 if __name__ == '__main__':
